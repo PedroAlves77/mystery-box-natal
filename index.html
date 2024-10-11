@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery box Merry Cristmas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&family=Inter:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- estilo personalizado -->
+    <link rel="stylesheet" href="styles/global.css">
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
+        integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <span id="container-confetti"></span>
+
+    <header
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out"
+    >
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+            <div>
+                <strong>NOEL COMPANY</strong>
+                <p>Construindo natais mágicos</p>
+            </div>
+        </div>
+
+
+        <a href="#" class="cart">
+            <span id="cart-count">0</span>
+            <img src="assets/treno.png">
+        </a>
+    </header>
+
+    <main>
+        <img 
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        src="assets/papai-noel.png">
+        <section>
+            <h2
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"   
+            data-aos-delay="300"
+            >
+            BOX MISTERIOSA DO
+            </h2>
+            <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"   
+            data-aos-delay="300"
+            >
+            PAPAI NOEL
+            </h1>
+            <p 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"   
+            data-aos-delay="500"
+            class="desciption"
+            >
+                Viva a magia do Natal com a nossa <strong>Box natalina</strong>, um presente diretamente da oficina do Polo Norte do Papai Noel. E adivinhe quem fará a entrega? Os correios? Nananinanão, será o próprio bom velhinho que se encarregará da entrega. Garanta já a sua Box misteriosa e transforme este Natal em um evento verdadeiramente especial. 
+            </p>
+
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"   
+            data-aos-delay="900"
+            class="buy"
+            >
+                <p><sup>$</sup>48.98</p>
+
+                <div class="buy-button">
+                    <span></span>
+                    <span></span>
+                    <span>
+                        <button type="button" onclick="addItem()">COMPRAR</button>
+                    </span>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/confetti-effect.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
+</body>
+
+</html>
