@@ -27,11 +27,7 @@
 
     <span id="container-confetti"></span>
 
-    <header
-    data-aos="fade-down"
-    data-aos-duration="800"
-    data-aos-easing="ease-in-out"
-    >
+    <header data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
         <div class="logo">
             <img src="assets/logo.png" alt="">
             <div>
@@ -46,69 +42,88 @@
             <img src="assets/treno.png">
         </a>
     </header>
+    <div>
+        <main>
+            <img data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out"
+                src="assets/papai-noel.png">
+            <section>
+                <h2 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
+                    BOX MISTERIOSA DO
+                </h2>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
+                    PAPAI NOEL
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="500"
+                    class="description">
+                    Faça já seu pedido mais desejado para o natal e receba junto nossa box natalina misteriosa, contendo
+                    alguns itens colocados especialmente pelo Papai Noel de acordo com a lista secreta de boas pessoas…
+                    E
+                    quem fará a entrega? Os correios? NÃAAOOO! Será o próprio Papai Noel na noite do natal! Então faça
+                    já
+                    seu pedido antes que o cronômetro se encerre e conheça a magia do Natal.
 
-    <main>
-        <img 
-        data-aos="fade-right"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-        src="assets/papai-noel.png">
-        <section>
-            <h2
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"   
-            data-aos-delay="300"
-            >
-            BOX MISTERIOSA DO
-            </h2>
-            <h1
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"   
-            data-aos-delay="300"
-            >
-            PAPAI NOEL
-            </h1>
-            <p 
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"   
-            data-aos-delay="500"
-            class="desciption"
-            >
-                Viva a magia do Natal com a nossa <strong>Box natalina</strong>, um presente diretamente da oficina do Polo Norte do Papai Noel. E adivinhe quem fará a entrega? Os correios? Nananinanão, será o próprio bom velhinho que se encarregará da entrega. Garanta já a sua Box misteriosa e transforme este Natal em um evento verdadeiramente especial. 
-            </p>
+                </p>
+            </section>
+        </main>
+        <div class="container">
+            <div class="buy">
+                <form class="form">
+                    <h1>Peça para o Papai Noel</h1>
 
-            <div 
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"   
-            data-aos-delay="900"
-            class="buy"
-            >
-                <p><sup>$</sup>48.98</p>
+                    <div class="form-inputs">
 
-                <div class="buy-button">
-                    <span></span>
-                    <span></span>
-                    <span>
-                        <button type="button" onclick="addItem()">COMPRAR</button>
-                    </span>
-                </div>
+                        <label id="label-name">
+                            Nome completo
+                            <input type="text" name="name" placeholder="Digite seu nome">  
+                        </label>
+
+                        <label id="label-name">
+                            Email
+                            <input type="email" name="email" placeholder="email@email.com">  
+                        </label>
+
+                        <label id="label-name">
+                            Telefone
+                            <input type="text" name="phone" placeholder="(31) 99999-9999">  
+                        </label>
+
+                        <label id="label-name">
+                            Qual sua idade?
+                            <input type="number" min="0" name="age"     placeholder="Digite sua idade">  
+                        </label>
+
+                        <label id="label-name">
+                            O que você quer ganhar?
+                            <textarea name="message" placeholder="Escreva para o Noel o que você quer ganhar neste natal" rows="7"></textarea>
+                        </label>
+
+                    </div>
+                    <div class="buy-button">
+                        <span></span>
+                        <span></span>
+                        <span>
+                            <button type="submit">Enviar
+                                <svg stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#EDF1F7"
+                                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </span>
+                    </div>
+                </form>
             </div>
+        </div>
+            
 
 
-        </section>
-    </main>
+            <script src="scripts/main.js"></script>
+            <script src="scripts/confetti-effect.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="scripts/main.js"></script>
-    <script src="scripts/confetti-effect.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init()
-    </script>
+            <script>
+                AOS.init()
+            </script>
 </body>
 
 </html>

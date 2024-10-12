@@ -1,7 +1,7 @@
 section{
     width: 100%;
     max-width: 656px;
-    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 section h2{
@@ -9,6 +9,7 @@ section h2{
     font-weight: 900;
     color: var(--red-dark);
     padding-left: 4px;
+    margin-bottom: 10px;
 }
 
 section h1{
@@ -16,18 +17,18 @@ section h1{
     font-weight: 900;
     letter-spacing: -2px;
     line-height: 0.8;
+    margin-bottom: 10px;
 }
 
 .description{
     font-size: 18px;
     line-height: 2.25;
     text-align: justify;
-
-    margin-top: 32px;
 }
 
 @media(max-width: 1266px){
     section{
+        margin-bottom: 0;
         width: 540px;
         margin-top: 24px;
         padding-right: 24px;
