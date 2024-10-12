@@ -15,6 +15,9 @@
     <!-- estilo personalizado -->
     <link rel="stylesheet" href="styles/global.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
         integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
@@ -66,35 +69,48 @@
             </section>
         </main>
         <div class="container">
+           
+
             <div class="buy">
-                <form class="form" name="contact" netlify>
+
+                <div class="overlay" id="overlay"></div>
+
+                <div class="popup" id="popup">
+                    <h1><strong>🎄Feliz Natal!🎄</strong></h1>
+                    <p>O papai Noel recebeu sua mensagem!!🎅</p>
+                    <button class="popup-close" id="close-popup">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="18" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                    </button>
+                </div>
+
+                <form class="form" autocomplete="off">
                     <h1>Peça para o Papai Noel</h1>
 
                     <div class="form-inputs">
 
                         <label id="label-name">
                             Nome completo
-                            <input type="text" name="name" placeholder="Digite seu nome">  
+                            <input type="text" name="name" placeholder="Digite seu nome" required>  
                         </label>
 
-                        <label id="label-name">
+                        <label id="label-email">
                             Email
-                            <input type="email" name="email" placeholder="email@email.com">  
+                            <input type="email" name="email" placeholder="email@email.com" required>  
                         </label>
 
-                        <label id="label-name">
+                        <label id="label-phone">
                             Telefone
-                            <input type="text" name="phone" placeholder="(31) 99999-9999">  
+                            <input type="text" name="phone" placeholder="(31) 99999-9999" required>  
                         </label>
 
-                        <label id="label-name">
+                        <label id="label-age">
                             Qual sua idade?
-                            <input type="number" min="0" name="age"     placeholder="Digite sua idade">  
+                            <input type="number" min="0" name="age"     placeholder="Digite sua idade" required>  
                         </label>
 
-                        <label id="label-name">
+                        <label id="label-message">
                             O que você quer ganhar?
-                            <textarea name="message" placeholder="Escreva para o Noel o que você quer ganhar neste natal" rows="7"></textarea>
+                            <textarea name="message" placeholder="Escreva para o Noel o que você quer ganhar neste natal" rows="7" required></textarea>
                         </label>
 
                     </div>
@@ -102,7 +118,7 @@
                         <span></span>
                         <span></span>
                         <span>
-                            <button type="submit">Enviar
+                            <button type="submit" onclick="addItem()">Enviar
                                 <svg stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#EDF1F7"
                                         d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
@@ -115,8 +131,7 @@
             </div>
         </div>
             
-
-
+            <script src="scripts/popup.js"></script>
             <script src="scripts/main.js"></script>
             <script src="scripts/confetti-effect.js"></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -2,6 +2,7 @@
 @import url(section.css);
 @import url(buy.css);
 @import url(form.css);
+@import url(popup.css);
 
 * {
     padding: 0;
