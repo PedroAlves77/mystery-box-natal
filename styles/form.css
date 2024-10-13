@@ -112,3 +112,20 @@ textarea{
         height: 60px;
     }
 }
+
+@media(max-width: 400px){
+    .form{
+        width: 350px;
+    }
+
+    .form-inputs{
+        padding-left: 30px;
+        grid-template-columns: 150px 150px; 
+        gap: 20px;
+    }
+
+    textarea{
+        width: 320px;
+        height: 60px;
+    }
+}

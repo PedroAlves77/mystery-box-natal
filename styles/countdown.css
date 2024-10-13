@@ -1,0 +1,99 @@
+#cronometro {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#cronometro h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--red-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.time-unit {
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.value {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.separator {
+    font-size: 2rem;
+    color: #e74c3c;
+}
+
+@media(max-width: 1266px) {
+    body {
+        padding: 24px 0 0;
+    }
+
+
+    main {
+        column-gap: 24px;
+    }
+
+    main img {
+        align-self: center;
+        width: auto;
+        min-width: 400px;
+    }
+}
+
+@media(max-width: 768px) {
+    #cronometro {
+        margin-top: 30px;
+        width: 80%;
+    }
+}
+
+@media(max-width: 400px) {
+
+    #cronometro {
+        padding-left: 10px;
+        margin-top: 30px;
+        max-width: 380px;
+    }
+
+    #countdown {
+        margin-top: 20px;
+        margin-left: 40px;
+        font-size: 1rem;
+        max-width: 300px;
+        display: flex;
+    }
+
+
+    .time-unit {
+        text-align: center;
+        margin: 0 4px;
+        padding: 0;
+    }
+
+    .value {
+        font-size: 2rem;
+    }
+
+    .separator {
+        font-size: 1rem;
+    }
+}
