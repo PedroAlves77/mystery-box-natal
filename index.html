@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <div class="overlay" id="overlay"></div>
 
     <span id="container-confetti"></span>
 
@@ -34,13 +35,45 @@
         <div class="logo">
             <img src="assets/logo.png" alt="">
             <div>
-                <strong>NOEL COMPANY</strong>
-                <p>Construindo natais mágicos</p>
+                <strong>Christmas Company</strong>
+                <p>Realizando seu sonho natalino</p>
             </div>
         </div>
 
 
-        <div>
+        <a href="#" class="cart">
+            <span id="cart-count">0</span>
+            <img src="assets/treno.png">
+        </a>
+    </header>
+    <div>
+
+        <main class="container">
+            <img data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out"
+                src="assets/papai-noel.png">
+            <section>
+                <h2 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
+                    BOX MISTERIOSA DO
+                </h2>
+                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
+                    PAPAI NOEL
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="500"
+                    class="description">
+                    Faça já seu pedido mais desejado para o natal e receba junto nossa box natalina misteriosa, contendo
+                    alguns itens colocados especialmente pelo Papai Noel de acordo com a lista secreta de boas pessoas…
+                    E
+                    quem fará a entrega? Os correios? NÃAAOOO! Será o próprio Papai Noel na noite do natal! Então faça
+                    já
+                    seu pedido antes que o cronômetro se encerre e conheça a magia do Natal.
+
+                </p>
+            </section>
+            
+        </main>
+
+        <div class="container"
+        data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
             <div id="cronometro">
                 <h2>Faltam para o natal</h2>
                 <div id="countdown">
@@ -67,41 +100,11 @@
             </div>
         </div>
 
-
-        <a href="#" class="cart">
-            <span id="cart-count">0</span>
-            <img src="assets/treno.png">
-        </a>
-    </header>
-    <div>
-        <main>
-            <img data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out"
-                src="assets/papai-noel.png">
-            <section>
-                <h2 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
-                    BOX MISTERIOSA DO
-                </h2>
-                <h1 data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="300">
-                    PAPAI NOEL
-                </h1>
-                <p data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="500"
-                    class="description">
-                    Faça já seu pedido mais desejado para o natal e receba junto nossa box natalina misteriosa, contendo
-                    alguns itens colocados especialmente pelo Papai Noel de acordo com a lista secreta de boas pessoas…
-                    E
-                    quem fará a entrega? Os correios? NÃAAOOO! Será o próprio Papai Noel na noite do natal! Então faça
-                    já
-                    seu pedido antes que o cronômetro se encerre e conheça a magia do Natal.
-
-                </p>
-            </section>
-        </main>
-        <div class="container">
+        <div class="container"
+        data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
            
 
             <div class="buy">
-
-                <div class="overlay" id="overlay"></div>
 
                 <div class="popup" id="popup">
                     <h1><strong>🎄Feliz Natal!🎄</strong></h1>
@@ -111,7 +114,7 @@
                     </button>
                 </div>
 
-                <form class="form" method="POST" name="contact" data-netlify="true">
+                <form class="form" >
                     <input type="hidden" name="form-contact" value="contact">
                     <h1>Peça para o Papai Noel</h1>
 

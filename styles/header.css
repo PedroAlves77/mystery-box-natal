@@ -1,4 +1,5 @@
 header {
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -25,12 +26,14 @@ header {
 }
 
 .logo div strong {
-    font-size: 24px;
+    color: var(--text);
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
     border-bottom: 1px solid var(--text);
 }
 
 .logo div p {
+    color: var(--text);
     font-size: 15px;
     font-weight: 300;
 }
@@ -76,13 +79,24 @@ header {
 
 @media(max-width: 768px) {
     header {
+        justify-content: center;
         padding: 0;
         display: grid;
-        justify-content:baseline;
         margin-bottom: 30px;
     }
 
-    .cart{
+    .cart {
         display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    .logo div strong {
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+    }
+
+    .logo div p {
+        font-size: 14px;
     }
 }

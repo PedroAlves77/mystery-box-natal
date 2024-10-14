@@ -14,9 +14,9 @@
 :root{
 
     --background: #f6f8ff42;
-    --text: #f1f1f1;
-    --red: #c51212;
-    --red-dark: #8a010b;
+    --text: #ECFFEB;
+    --red: #BA0C0C;
+    --red-dark: #530808;
 
     --shadow-image: drop-shadow(rgba(0,0,0,0.35) 0px 3px 8px);
     --background-body: linear-gradient(125deg, var(--red-dark) 36%, var(--red) 36%);
@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 32px 64px 0;
-    background: var(--background-body);
+    background: var(--background-body) repeat-y;
 }
 
 #container-confetti{
